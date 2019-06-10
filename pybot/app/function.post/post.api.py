@@ -7,7 +7,7 @@ app = Flask(__name__)
 def post():
     if request.method == 'POST':
         data = request.get_json()
-        file_data ="app/data/data.json"
+        file_data ="usr/src/pybot/app/data/data.json"
 
         with open(file_data, 'w') as outfile:
             json.dump(data, outfile) 
